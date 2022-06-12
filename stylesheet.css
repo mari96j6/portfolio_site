@@ -1,0 +1,162 @@
+html {
+  /* farve */
+  --violet: 255;
+  --saturation: 84%;
+
+  /* paddig */
+  --space-xxs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  --space-xxl: 6rem;
+
+  /* anvend ved fx. 
+  h1 {
+  color: var(--xx);
+}
+  */
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  min-height: 100vh;
+  background-color: hsl(var(--violet), var(--saturation), 97%);
+  font-size: 100%;
+  font-family: garamond;
+  margin: 0;
+  padding: 0;
+}
+
+.en {
+  width: 300px;
+  background-color: hsl(var(--violet), 84%, 97%);
+  padding: 50px;
+  margin: 20px;
+}
+.to {
+  width: 300px;
+  background-color: hsl(var(--violet), 84%, 91%);
+  padding: 50px;
+  margin: 20px;
+}
+
+.tre {
+  width: 300px;
+  background-color: hsl(var(--violet), 84%, 82%);
+  padding: 50px;
+  margin: 20px;
+}
+.fire {
+  width: 300px;
+  background-color: hsl(var(--violet), 84%, 73%);
+  padding: 50px;
+  margin: 20px;
+}
+.fem {
+  width: 300px;
+  background-color: hsl(var(--violet), 84%, 64%);
+  padding: 50px;
+  margin: 20px;
+}
+.seks {
+  width: 300px;
+  background-color: hsl(var(--violet), 84%, 55%);
+  padding: 50px;
+  margin: 20px;
+}
+.svy {
+  width: 300px;
+  background-color: hsl(var(--violet), 84%, 46%);
+  padding: 50px;
+  margin: 20px;
+}
+
+/* Menu */
+.menu {
+  font-size: 100%;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  background: hsl(var(--violet), var(--saturation), 90%);
+}
+
+.menu ul li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 0.8rem 1rem;
+  display: block;
+  line-height: 1;
+}
+.menu ul li {
+  border-bottom: 1px solid rgb(114, 114, 114);
+  text-align: center;
+}
+.menu img {
+  max-width: 75px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu div:first-child {
+  background-color: hsl(var(--violet), var(--saturation), 90%);
+  line-height: 0;
+  padding: 0.8rem 0rem;
+}
+
+.menu div:first-child h4,
+.menu ul {
+  margin: 0;
+}
+
+@media (min-width: 600px) {
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    background: hsl(var(--violet), var(--saturation), 90%);
+    align-items: center;
+    font-size: 100%;
+    border-bottom: 1px solid rgb(114, 114, 114);
+  }
+  .menu ul {
+    display: flex;
+    align-items: center;
+    background: none;
+    flex-wrap: wrap;
+    margin-right: 2rem;
+  }
+  .menu div:first-child a {
+    padding: 0;
+    margin: 0 1rem;
+  }
+  .menu div:first-child img {
+    height: 75px;
+    margin-left: 2rem;
+  }
+  .menu div:first-child {
+    background: none;
+  }
+  .menu ul li {
+    border-bottom: none;
+    flex: 1 0 auto;
+    position: relative;
+  }
+}
+
+/* footer */
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  font-family: garamond-italic;
+  position: sticky;
+  top: 100vh;
+  background: hsl(var(--violet), var(--saturation), 90%);
+  border-top: 1px solid rgb(114, 114, 114);
+}
