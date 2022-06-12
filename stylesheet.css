@@ -84,8 +84,15 @@ body {
 .forsidemenu ul {
   list-style: none;
   display: flex;
+  flex-direction: column;
 }
 
+@media (min-width: 600px) {
+  .forsidemenu ul {
+    list-style: none;
+    display: flex;
+  }
+}
 /* Menu */
 .menu {
   font-size: 100%;
