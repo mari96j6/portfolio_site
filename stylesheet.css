@@ -85,14 +85,52 @@ body {
   list-style: none;
   display: flex;
   flex-direction: column;
+  text-align: center;
+}
+.forsidemenu a {
+  color: aliceblue;
+  font-size: var(--space-md);
+}
+
+.menu1 {
+  background-image: url(img/1.png);
+  padding: 5.5rem;
+}
+.menu2 {
+  background-image: url(img/2.png);
+  padding: 5.5rem;
+}
+.menu3 {
+  background-image: url(img/3.png);
+  padding: 5.5rem;
 }
 
 @media (min-width: 600px) {
   .forsidemenu ul {
     list-style: none;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .forsidemenu a {
+    color: aliceblue;
+    font-size: var(--space-md);
+    justify-content: center;
+  }
+  .forsidemenu img {
+    max-width: 100%;
+  }
+  .menu1 {
+    background-image: url(img/4.png);
+  }
+  .menu2 {
+    background-image: url(img/5.png);
+  }
+  .menu3 {
+    background-image: url(img/6.png);
   }
 }
+
 /* Menu */
 .menu {
   font-size: 100%;
