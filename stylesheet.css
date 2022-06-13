@@ -32,6 +32,9 @@ body {
   background-color: hsl(var(--violet), var(--saturation), 97%);
   font-size: 100%;
 }
+main {
+  font-family: "Raleway", sans-serif;
+}
 
 .en {
   width: 300px;
@@ -175,7 +178,6 @@ body {
 
 /* Styling */
 .col {
-  font-family: "Raleway", sans-serif;
   margin: 2rem;
 }
 .billede_gallery {
@@ -210,6 +212,22 @@ body {
 .picture {
   order: -1;
   margin: 2rem;
+}
+
+.intro {
+  text-align: center;
+  margin: 3rem;
+  font-size: 3rem;
+}
+.intro p {
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+.opdel {
+  padding: 2rem;
+  background: hsl(var(--violet), var(--saturation), 75%);
+  text-align: center;
 }
 
 @media (min-width: 600px) {
