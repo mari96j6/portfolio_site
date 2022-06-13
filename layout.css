@@ -14,44 +14,6 @@
     grid-template-columns: 1fr 2fr;
     gap: 1.25rem;
   }
-  .grid_4-4 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.25rem;
-    margin-right: 5rem;
-    margin-left: 5rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-  }
-
-  .billede1 {
-    display: grid;
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 1;
-    grid-row-end: 1;
-  }
-  .billede2 {
-    display: grid;
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 1;
-  }
-  .billede3 {
-    display: grid;
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 2;
-    grid-row-end: 2;
-  }
-  .billede4 {
-    display: grid;
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 2;
-  }
 
   .grid_1-1-1-1 {
     display: grid;

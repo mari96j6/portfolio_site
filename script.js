@@ -1,10 +1,10 @@
-const btn = document.querySelector("button");
-const show = document.querySelector(".process");
-const hide = document.querySelector(".process");
+const knap = document.querySelector(".knap");
+const gallery = document.querySelector(".billede_gallery");
 
-function klikket() {
-  show.classList.toggle("show");
-  hide.classList.toggle("hide");
-}
-
-btn.addEventListener("mousedown", klikket);
+knap.addEventListener("click", () => {
+  if (gallery.style.display === "none") {
+    gallery.style.display = "block";
+  } else {
+    gallery.style.display = "none";
+  }
+});

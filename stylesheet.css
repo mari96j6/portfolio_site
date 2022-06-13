@@ -240,9 +240,6 @@ main {
   background: hsl(var(--violet), var(--saturation), 75%);
   text-align: center;
 }
-.hide {
-  display: none;
-}
 
 .knap {
   background: hsl(var(--violet), var(--saturation), 85%);
@@ -257,6 +254,7 @@ main {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 .knap:hover {
