@@ -36,49 +36,6 @@ main {
   font-family: "Raleway", sans-serif;
 }
 
-.en {
-  width: 300px;
-  background-color: hsl(var(--violet), 84%, 97%);
-  padding: 50px;
-  margin: 20px;
-}
-.to {
-  width: 300px;
-  background-color: hsl(var(--violet), 84%, 91%);
-  padding: 50px;
-  margin: 20px;
-}
-
-.tre {
-  width: 300px;
-  background-color: hsl(var(--violet), 84%, 82%);
-  padding: 50px;
-  margin: 20px;
-}
-.fire {
-  width: 300px;
-  background-color: hsl(var(--violet), 84%, 73%);
-  padding: 50px;
-  margin: 20px;
-}
-.fem {
-  width: 300px;
-  background-color: hsl(var(--violet), 84%, 64%);
-  padding: 50px;
-  margin: 20px;
-}
-.seks {
-  width: 300px;
-  background-color: hsl(var(--violet), 84%, 55%);
-  padding: 50px;
-  margin: 20px;
-}
-.svy {
-  width: 300px;
-  background-color: hsl(var(--violet), 84%, 46%);
-  padding: 50px;
-  margin: 20px;
-}
 /* Forside Menu*/
 .forsidemenu ul {
   list-style: none;
@@ -93,7 +50,7 @@ main {
   font-size: var(--space-md);
 }
 .forsidemenu a:hover {
-  color: rgb(171, 171, 171);
+  color: rgb(96, 96, 96);
 }
 
 .menuui a:hover {
@@ -102,16 +59,20 @@ main {
 }
 
 .menu1 {
-  background-image: url(img/1.png);
-  padding: 5.5rem;
+  background-image: url(img/image1.webp);
+  padding: 6rem;
+  border: 1px solid rgb(114, 114, 114);
 }
 .menu2 {
-  background-image: url(img/2.png);
-  padding: 5.5rem;
+  background-image: url(img/image2.webp);
+  padding: 6rem;
+  border-left: 1px solid rgb(114, 114, 114);
+  border-right: 1px solid rgb(114, 114, 114);
 }
 .menu3 {
-  background-image: url(img/3.png);
-  padding: 5.5rem;
+  background-image: url(img/image3.webp);
+  padding: 6rem;
+  border: 1px solid rgb(114, 114, 114);
 }
 
 @media (min-width: 600px) {
@@ -122,7 +83,7 @@ main {
   }
 
   .forsidemenu a {
-    color: aliceblue;
+    color: white;
     font-size: var(--space-md);
     justify-content: center;
   }
@@ -130,16 +91,18 @@ main {
     max-width: 100%;
   }
   .menu1 {
-    background-image: url(img/4.png);
-    aspect-ratio: 9/20;
+    background-image: url(img/image4.webp);
+    border: 1px solid rgb(114, 114, 114);
   }
   .menu2 {
-    background-image: url(img/5.png);
-    margin: 0;
+    background-image: url(img/image5.webp);
+    border-top: 1px solid rgb(114, 114, 114);
+    border-bottom: 1px solid rgb(114, 114, 114);
+    aspect-ratio: 16 / 27;
   }
   .menu3 {
-    background-image: url(img/6.png);
-    margin: 0;
+    background-image: url(img/image6.webp);
+    border: 1px solid rgb(114, 114, 114);
   }
 }
 
@@ -156,9 +119,9 @@ main {
 }
 
 .menu ul li a {
-  color: rgb(0, 0, 0);
+  color: black;
   text-decoration: none;
-  padding: 0.8rem 1rem;
+  padding: 1rem;
   display: block;
   line-height: 1;
 }
