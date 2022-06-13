@@ -182,6 +182,36 @@ body {
   margin: 2rem;
 }
 
+.col h3 {
+  line-height: var(--space-lg);
+  margin-top: var(--space-sm);
+}
+.col p {
+  line-height: var(--space-md);
+}
+.cv {
+  text-align: center;
+}
+.cv a {
+  background: hsl(var(--violet), var(--saturation), 85%);
+  text-decoration: none;
+  border: 1px solid rgb(114, 114, 114);
+  color: black;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: var(--space-sm);
+  font-family: "Comfortaa", cursive;
+  line-height: 3rem;
+}
+.cv a:hover {
+  background: hsl(var(--violet), var(--saturation), 75%);
+}
+
+.picture {
+  order: -1;
+  margin: 2rem;
+}
+
 @media (min-width: 600px) {
   .menu {
     display: flex;
@@ -198,23 +228,15 @@ body {
     flex-wrap: wrap;
     margin-right: 2rem;
   }
-  .menu div:first-child a {
-    padding: 0;
-    margin: 0 1rem;
-  }
+
   .menu div:first-child img {
-    height: 75px;
+    height: 4.5rem;
     margin-left: 2rem;
   }
-  .menu div:first-child {
-    background: none;
-  }
+
   .menu ul li {
     border-bottom: none;
-    flex: 1 0 auto;
-    position: relative;
   }
-
   /* Styling */
   .col {
     margin-top: 2rem;
@@ -222,31 +244,11 @@ body {
     margin-right: 4rem;
     margin-bottom: 2rem;
   }
-  .col h2 {
-    line-height: var(--space-xl);
-  }
-  .col h3 {
-    line-height: var(--space-lg);
-  }
-  .col p {
-    line-height: var(--space-md);
-  }
-  .cv {
-    text-align: center;
-  }
-  .cv a {
-    background: hsl(var(--violet), var(--saturation), 85%);
-    text-decoration: none;
-    border: 1px solid rgb(114, 114, 114);
-    color: black;
-    padding: 1rem;
-    cursor: pointer;
-    font-size: var(--space-sm);
-    font-family: "Comfortaa", cursive;
-    line-height: 3rem;
-  }
-  .cv a:hover {
-    background: hsl(var(--violet), var(--saturation), 75%);
+  .picture {
+    margin-top: 2rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-bottom: 2rem;
   }
 }
 
