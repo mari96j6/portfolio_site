@@ -9,8 +9,8 @@ html {
   --saturation: 84%;
 
   /* paddig */
-  --space-xxs: 0.25rem;
-  --space-xs: 0.5rem;
+  --space-xxs: 0.5rem;
+  --space-xs: 0.75rem;
   --space-sm: 1rem;
   --space-md: 1.5rem;
   --space-lg: 2rem;
@@ -191,13 +191,22 @@ main {
 .billede_gallery {
   margin: 2rem;
 }
-
-.col h3 {
-  line-height: var(--space-lg);
-  margin-top: var(--space-sm);
+.grid_1-1 h3 {
+  margin-top: var(--space-xs);
+  margin-bottom: var(--space-xs);
 }
+
+.grid_1-2 h3 {
+  margin-bottom: var(--space-xs);
+}
+
+.grid_2-1 h3 {
+  margin-bottom: var(--space-xs);
+}
+
 .col p {
   line-height: var(--space-md);
+  margin-bottom: 2rem;
 }
 .cv {
   text-align: center;
