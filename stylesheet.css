@@ -7,6 +7,7 @@ html {
   /* farve */
   --violet: 255;
   --saturation: 84%;
+  --border: rgb(114, 114, 114);
 
   /* paddig */
   --space-xxs: 0.5rem;
@@ -61,7 +62,7 @@ main {
 .menu1 {
   background-image: url(img/image1.webp);
   padding: 6rem;
-  border: 1px solid rgb(114, 114, 114);
+  border: 1px solid var(--border);
 }
 .menu2 {
   background-image: url(img/image2.webp);
@@ -72,7 +73,7 @@ main {
 .menu3 {
   background-image: url(img/image3.webp);
   padding: 6rem;
-  border: 1px solid rgb(114, 114, 114);
+  border: 1px solid var(--border);
 }
 
 @media (min-width: 600px) {
@@ -92,17 +93,17 @@ main {
   }
   .menu1 {
     background-image: url(img/image4.webp);
-    border: 1px solid rgb(114, 114, 114);
+    border: 1px solid var(--border);
   }
   .menu2 {
     background-image: url(img/image5.webp);
-    border-top: 1px solid rgb(114, 114, 114);
-    border-bottom: 1px solid rgb(114, 114, 114);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
     aspect-ratio: 16 / 27;
   }
   .menu3 {
     background-image: url(img/image6.webp);
-    border: 1px solid rgb(114, 114, 114);
+    border: 1px solid var(--border);
   }
 }
 
@@ -126,7 +127,7 @@ main {
   line-height: 1;
 }
 .menu ul li {
-  border-bottom: 1px solid rgb(114, 114, 114);
+  border-bottom: 1px solid var(--border);
   text-align: center;
 }
 .menu img {
@@ -177,7 +178,7 @@ main {
 .cv a {
   background: hsl(var(--violet), var(--saturation), 85%);
   text-decoration: none;
-  border: 1px solid rgb(114, 114, 114);
+  border: 1px solid var(--border);
   color: black;
   padding: 1rem;
   cursor: pointer;
@@ -215,7 +216,7 @@ main {
 
 .knap {
   background: hsl(var(--violet), var(--saturation), 85%);
-  border: 1px solid rgb(114, 114, 114);
+  border: 1px solid var(--border);
   color: black;
   padding: 1rem;
   cursor: pointer;
@@ -240,7 +241,7 @@ main {
     background: hsl(var(--violet), var(--saturation), 94%);
     align-items: center;
     font-size: 100%;
-    border-bottom: 1px solid rgb(114, 114, 114);
+    border-bottom: 1px solid var(--border);
   }
   .menu ul {
     display: flex;
@@ -281,5 +282,5 @@ footer {
   position: sticky;
   top: 100vh;
   background: hsl(var(--violet), var(--saturation), 94%);
-  border-top: 1px solid rgb(114, 114, 114);
+  border-top: 1px solid var(--border);
 }
