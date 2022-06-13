@@ -92,6 +92,14 @@ main {
   text-decoration: none;
   font-size: var(--space-md);
 }
+.forsidemenu a:hover {
+  color: rgb(171, 171, 171);
+}
+
+.menuui a:hover {
+  color: rgb(96, 96, 96);
+  transform: scale(1.25);
+}
 
 .menu1 {
   background-image: url(img/1.png);
@@ -216,7 +224,10 @@ main {
 
 .intro {
   text-align: center;
-  margin: 3rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
   font-size: 3rem;
 }
 .intro p {
@@ -228,6 +239,28 @@ main {
   padding: 2rem;
   background: hsl(var(--violet), var(--saturation), 75%);
   text-align: center;
+}
+.hide {
+  display: none;
+}
+
+.knap {
+  background: hsl(var(--violet), var(--saturation), 85%);
+  border: 1px solid rgb(114, 114, 114);
+  color: black;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: var(--space-sm);
+  font-family: "Comfortaa", cursive;
+
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+}
+
+.knap:hover {
+  background: hsl(var(--violet), var(--saturation), 75%);
 }
 
 @media (min-width: 600px) {
