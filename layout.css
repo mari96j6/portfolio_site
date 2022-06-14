@@ -24,16 +24,16 @@
     align-self: stretch;
     object-fit: cover;
   }
-  .image8 {
+  .image4 {
     display: grid;
     grid-column: span 2;
     grid-row: span 2;
   }
-  .image11 {
+  .image7 {
     display: grid;
     grid-column: span 2;
   }
-  .image13 {
+  .image9 {
     display: grid;
     grid-column: span 3;
   }
