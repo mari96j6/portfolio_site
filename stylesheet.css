@@ -9,6 +9,7 @@ html {
   --violet: 255;
   --saturation: 84%;
   --border: rgb(114, 114, 114);
+  --linkhover: rgb(150, 150, 150);
 
   /* paddig */
   --space-xxs: 0.5rem;
@@ -46,7 +47,8 @@ main {
   font-size: var(--space-md);
 }
 .forsidemenu a:hover {
-  color: rgb(150, 150, 150);
+  /* color: rgb(150, 150, 150); */
+  color: var(--linkhover);
 }
 
 @media (max-width: 600px) {
@@ -179,18 +181,52 @@ main {
 
 .menu div:first-child {
   background-color: hsl(var(--violet), var(--saturation), 94%);
-  line-height: 0;
-  padding: 0.8rem 0rem;
-}
-
-.menu div:first-child h4,
-.menu ul {
-  margin: 0;
+  padding: 1rem;
 }
 
 .menuui a:hover {
-  color: rgb(96, 96, 96);
+  color: var(--linkhover);
   transform: scale(1.25);
+}
+
+@media (min-width: 600px) {
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    background: hsl(var(--violet), var(--saturation), 94%);
+    align-items: center;
+    font-size: 100%;
+    border-bottom: 1px solid var(--border);
+  }
+  .menu ul {
+    display: flex;
+    align-items: center;
+    background: none;
+    flex-wrap: wrap;
+    margin-right: 2rem;
+  }
+
+  .menu div:first-child img {
+    height: 4.5rem;
+    margin-left: 2rem;
+  }
+
+  .menu ul li {
+    border-bottom: none;
+  }
+  /* Styling */
+  .col {
+    margin-top: 2rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-bottom: 2rem;
+  }
+  .picture {
+    margin-top: 2rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-bottom: 2rem;
+  }
 }
 /* Styling */
 .col {
@@ -240,7 +276,7 @@ main {
   font-size: var(--space-sm);
 }
 .websitelink:hover {
-  color: rgb(96, 96, 96);
+  color: var(--linkhover);
 }
 
 .picture {
@@ -275,7 +311,6 @@ main {
   cursor: pointer;
   font-size: var(--space-sm);
   font-family: "Comfortaa", cursive;
-
   display: flex;
   margin-left: auto;
   margin-right: auto;
@@ -287,53 +322,12 @@ main {
   background: hsl(var(--violet), var(--saturation), 75%);
 }
 
-@media (min-width: 600px) {
-  .menu {
-    display: flex;
-    justify-content: space-between;
-    background: hsl(var(--violet), var(--saturation), 94%);
-    align-items: center;
-    font-size: 100%;
-    border-bottom: 1px solid var(--border);
-  }
-  .menu ul {
-    display: flex;
-    align-items: center;
-    background: none;
-    flex-wrap: wrap;
-    margin-right: 2rem;
-  }
-
-  .menu div:first-child img {
-    height: 4.5rem;
-    margin-left: 2rem;
-  }
-
-  .menu ul li {
-    border-bottom: none;
-  }
-  /* Styling */
-  .col {
-    margin-top: 2rem;
-    margin-left: 4rem;
-    margin-right: 4rem;
-    margin-bottom: 2rem;
-  }
-  .picture {
-    margin-top: 2rem;
-    margin-left: 4rem;
-    margin-right: 4rem;
-    margin-bottom: 2rem;
-  }
-}
-
 /* footer */
 footer {
   text-align: center;
   margin-top: 2rem;
   font-family: "Comfortaa", cursive;
   position: sticky;
-  top: 100vh;
   background: hsl(var(--violet), var(--saturation), 94%);
   border-top: 1px solid var(--border);
 }
